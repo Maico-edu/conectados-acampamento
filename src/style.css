@@ -1,0 +1,82 @@
+/* =====================================================================
+   ESTILOS GLOBAIS — aqui ficam as CORES, FONTES e regras usadas no site todo.
+   Para mudar o visual geral, mexa nas variáveis logo abaixo (em :root).
+   ===================================================================== */
+:root {
+  /* ---------- CORES ---------- */
+  --branco: #ffffff;
+  --marfim: #fbf8f3;          /* fundo alternativo das seções */
+  --champagne: #b8945a;       /* dourado principal (texto e detalhes) */
+  --champagne-claro: #e9dcc0; /* dourado suave (bordas e fundos) */
+  --noite: #14101f;           /* tom escuro, usado só para contraste */
+  --texto: #2a2533;           /* cor do texto comum */
+  --texto-suave: #6b6577;     /* textos secundários */
+  --laranja: #ff7a3d;         /* apoio da logo */
+  --roxo: #6b3fd4;            /* apoio da logo */
+  --rosa: #ff3d8b;            /* apoio da logo */
+
+  /* Degradê da "esfera" da logo (usado no início, inscrição e abertura) */
+  --degrade-esfera: linear-gradient(180deg, #ffd21f 0%, #ff8a2b 28%, #ff2e63 55%, #a12bd6 78%, #3b3bff 100%);
+
+  /* ---------- FONTES ---------- */
+  --fonte-titulo: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --fonte-texto: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* ---------- MEDIDAS ---------- */
+  --largura-max: 1120px;
+  --espaco-secao: clamp(4.5rem, 10vw, 8rem); /* espaço acima/abaixo de cada seção */
+  --raio: 18px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--fonte-texto);
+  color: var(--texto);
+  background: var(--branco);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+body.sem-rolagem { overflow: hidden; } /* travado enquanto a tela de abertura está visível */
+
+img { max-width: 100%; display: block; }
+h1, h2, h3 { font-family: var(--fonte-titulo); font-weight: 600; line-height: 1.15; margin: 0; color: var(--noite); }
+p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+button { font: inherit; cursor: pointer; }
+
+/* Foco visível para quem navega pelo teclado */
+:focus-visible { outline: 3px solid var(--roxo); outline-offset: 3px; border-radius: 6px; }
+
+/* ---------- ESTRUTURA DAS SEÇÕES ---------- */
+.secao { padding: var(--espaco-secao) 1.5rem; scroll-margin-top: 0; }
+.secao--marfim { background: var(--marfim); }
+.secao__conteudo { max-width: var(--largura-max); margin: 0 auto; }
+.secao__titulo { font-size: clamp(2rem, 5vw, 3.2rem); max-width: 18ch; }
+.secao__intro { margin-top: 1rem; max-width: 56ch; color: var(--texto-suave); font-size: 1.05rem; }
+.secao__cabecalho { margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.linha-dourada { width: 56px; height: 2px; background: var(--champagne); margin-bottom: 1.25rem; border: 0; }
+
+/* ---------- ANIMAÇÃO "aparecer ao rolar" (diretiva v-revelar) ---------- */
+.revelar { opacity: 0; transform: translateY(18px); transition: opacity .8s ease, transform .8s ease; }
+.revelar.revelado { opacity: 1; transform: none; }
+
+/* ---------- MOVIMENTO REDUZIDO ----------
+   Se a pessoa ativou "reduzir movimento" no aparelho, desligamos as animações. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .revelar { opacity: 1; transform: none; }
+}
+
+/* Texto apenas para leitores de tela */
+.so-leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Etiqueta usada em conteúdos demonstrativos */
+.etiqueta-exemplo {
+  display: inline-block; font-size: .75rem; font-weight: 600; letter-spacing: .02em;
+  padding: .2rem .65rem; border-radius: 999px; background: var(--champagne-claro); color: #6d5528;
+}
+
+body.sem-rolagem-menu { overflow: hidden; }
