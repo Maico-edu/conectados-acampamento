@@ -65,7 +65,8 @@ function entrar() {
 <style scoped>
 .abertura {
   position: fixed; inset: 0; z-index: 1000; width: 100%; height: 100%; border: 0; padding: 0;
-  display: grid; place-items: center; overflow: hidden; color: var(--branco);
+  display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr);
+  place-items: center; overflow: hidden; color: var(--branco);
   background:
     radial-gradient(60% 55% at 0% 70%, rgba(40, 30, 200, .38), transparent 70%),
     radial-gradient(60% 55% at 100% 70%, rgba(40, 30, 200, .38), transparent 70%),
