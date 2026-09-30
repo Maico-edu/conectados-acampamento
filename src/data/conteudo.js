@@ -134,7 +134,7 @@ export const equipe = [
 export const depoimentos = [
   { texto: 'Graça e paz jovens! Eu sou o Davi e minha última experiência no retiro dos conectados foi algo surreal!!! Não foi só um retiro, foi o retiro que mostrou que mostrou que eu tenho uma família que não é de sangue, eu conheci ótimos amigos e o principal, eu fui cheio do Espírito Santo naqueles dias.', nome: 'Davi Heitor', foto: '../images/depoimentos/davi.jpeg', exemplo: true },
   { texto: 'O retiro no início do ano, foi uma experiência única, muita diversão,  presença de Deus no lugar, diversas gincanas, ensinamentos, louvores, e esse foi o primeiro retiro que tive no conectados, uma experiência que recomendo demais.', nome: 'Gustavo de Oliveira', foto: '../images/depoimentos/gusta.jpeg', exemplo: true },
-  { texto: 'Aqui entrará o depoimento de quem participou de uma edição anterior.', nome: 'Nome da pessoa', foto: '', exemplo: true },
+  { texto: 'Falaaa Jovensss. ei, retiro passado foi benção tá! meu primeiro retiro com a galera dos conectados, e deixa eu te falar. oque Deus fez naquele lugar foi Surreal! muitas brincadeiras, comunhão e momento de palavra! fui transformada, curada e respondida por Ele. sem contar que fiz muuuitas amizades! ficou curioso e quer aproveitar junto com a gente? vem nesse então, eu aposto que vocês não vão se arrepender, e oque Deus tem pra vocês, é muito mais que especial. esperamos por você! 🤍.', nome: 'Isabely Serafim', foto: '../images/depoimentos/isa.jpeg', exemplo: true },
   { texto: 'Aqui entrará o depoimento de quem participou de uma edição anterior.', nome: 'Nome da pessoa', foto: '', exemplo: true },
 ]
 

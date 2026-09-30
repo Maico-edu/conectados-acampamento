@@ -23,7 +23,7 @@ const inicial = (nome) => (nome ? nome.trim().charAt(0).toUpperCase() : '?')
           <h3>{{ pessoa.nome }}</h3>
           <p class="equipe__funcao">{{ pessoa.funcao }}</p>
           <p class="equipe__descricao">{{ pessoa.descricao }}</p>
-          <span v-if="pessoa.exemplo" class="etiqueta-exemplo">Espaço reservado</span>
+          <span v-if="pessoa.exemplo" class="etiqueta-exemplo">Lideres</span>
         </li>
       </ul>
     </div>
