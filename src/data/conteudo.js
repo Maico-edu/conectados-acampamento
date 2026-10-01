@@ -135,7 +135,8 @@ export const depoimentos = [
   { texto: 'Graça e paz jovens! Eu sou o Davi e minha última experiência no retiro dos conectados foi algo surreal!!! Não foi só um retiro, foi o retiro que mostrou que mostrou que eu tenho uma família que não é de sangue, eu conheci ótimos amigos e o principal, eu fui cheio do Espírito Santo naqueles dias.', nome: 'Davi Heitor', foto: '../images/depoimentos/davi.jpeg', exemplo: true },
   { texto: 'O retiro no início do ano, foi uma experiência única, muita diversão,  presença de Deus no lugar, diversas gincanas, ensinamentos, louvores, e esse foi o primeiro retiro que tive no conectados, uma experiência que recomendo demais.', nome: 'Gustavo de Oliveira', foto: '../images/depoimentos/gusta.jpeg', exemplo: true },
   { texto: 'Falaaa Jovensss. ei, retiro passado foi benção tá! meu primeiro retiro com a galera dos conectados, e deixa eu te falar. oque Deus fez naquele lugar foi Surreal! muitas brincadeiras, comunhão e momento de palavra! fui transformada, curada e respondida por Ele. sem contar que fiz muuuitas amizades! ficou curioso e quer aproveitar junto com a gente? vem nesse então, eu aposto que vocês não vão se arrepender, e oque Deus tem pra vocês, é muito mais que especial. esperamos por você! 🤍.', nome: 'Isabely Serafim', foto: '../images/depoimentos/isa.jpeg', exemplo: true },
-  { texto: 'Aqui entrará o depoimento de quem participou de uma edição anterior.', nome: 'Nome da pessoa', foto: '', exemplo: true },
+  { texto: 'Eu sou a Kaii. A princípio eu nem ia pro retiro, até que a mãe de uma amiga se ofereceu pra pagar tudo pra mim ir. Logo aí eu entendi que Deus queria que eu estivesse naquele lugar. Eu vinha num tempo de orações pedindo socorro pra Deus, e logo na primeira noite uma pessoa muito querida foi orar por mim. Eu não estava sentindo nada, até ela falar uma parte da minha oração secreta pra Jesus e eu desabar em choro. Saí daquele retiro queimando novamente por Jesus, sentindo o amor e o cuidado dEle na minha vida. Depois que passou, eu teria me arrependido muito se não tivesse ido. Então, se você é um jovem na dúvida entre ir e não ir pro retiro: VÁ!', nome: 'Kailany Carvalho', foto: '../images/depoimentos/kai.jpeg', exemplo: true },
+  { texto: 'O retiro do ano passado foi uma experiência muito especial para mim. Foi um momento em que pude me aproximar mais de Jesus, ter novas experiências e sentir a presença d’Ele de uma forma diferente. Foram momentos muito emocionantes e que tocaram muito meu coração. Sou muito grata por tudo que vivi naquele retiro e por poder guardar comigo cada experiência e cada momento que tive com Deus. Foi realmente algo muito especial para mim. 🤍', nome: 'Giovana Rosa', foto: '../images/depoimentos/gio.jpeg', exemplo: true },
 ]
 
 /* ---------------------------------------------------------------------
@@ -166,7 +167,7 @@ export const perguntas = [
   },
   { pergunta: 'Quando será o acampamento?', resposta: `Nos dias ${evento.datas}.` },
   { pergunta: 'Onde será realizado?', resposta: '' }, // vazio = "Informações em breve"
-  { pergunta: 'Como faço minha inscrição?', resposta: '' }, // troque quando o link estiver disponível
+  { pergunta: 'Como faço minha inscrição?', resposta: 'aperte em "quero me alistar" no começo do site' }, // troque quando o link estiver disponível
 ]
 
 /* ---------------------------------------------------------------------

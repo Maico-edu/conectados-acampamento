@@ -38,7 +38,6 @@ onMounted(() => document.body.classList.toggle('sem-rolagem', aberturaVisivel.va
     <Sobre />
     <Incluso />
     <OQueLevar />
-    <Programacao />
     <Equipe />
     <Depoimentos />
     <PerguntasFrequentes />
