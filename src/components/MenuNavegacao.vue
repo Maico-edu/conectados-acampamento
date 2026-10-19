@@ -51,7 +51,7 @@ watch(aberto, (v) => document.body.classList.toggle('sem-rolagem-menu', v))
 <style scoped>
 .menu__botao {
   position: fixed; top: 1rem; right: 1rem; z-index: 60; width: 52px; height: 52px; border-radius: 50%;
-  border: 1px solid var(--champagne-claro); background: rgba(255, 255, 255, .92); backdrop-filter: blur(8px);
+  border: 1px solid var(--champagne-claro); background: var(--branco); backdrop-filter: blur(8px);
   display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px;
   box-shadow: 0 6px 20px rgba(20, 16, 31, .12);
 }

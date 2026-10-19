@@ -89,7 +89,7 @@ onMounted(() => {
   height: 52px;
   border: 1px solid var(--champagne-claro);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.84);
+  background: var(--branco);
   color: var(--noite);
   box-shadow: 0 8px 22px rgba(20, 16, 31, 0.12);
   display: grid;
