@@ -31,8 +31,8 @@ const inicial = (nome) => (nome ? nome.trim().charAt(0).toUpperCase() : '?')
 </template>
 
 <style scoped>
-.equipe__grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem; }
-.equipe__card { background: var(--branco); border-radius: var(--raio); padding: 1.75rem; text-align: center; display: grid; justify-items: center; gap: .4rem; border: 1px solid var(--champagne-claro); transition: transform .25s ease; }
+.equipe__grade { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem; align-items: start; }
+.equipe__card { background: var(--branco); border-radius: var(--raio); padding: 1.75rem; text-align: center; display: grid; align-content: start; justify-items: center; gap: .4rem; border: 1px solid var(--champagne-claro); transition: transform .25s ease; }
 .equipe__card:hover { transform: translateY(-4px); }
 .equipe__foto { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: .6rem; }
 .equipe__foto--vazia { display: grid; place-items: center; background: var(--marfim); border: 1px dashed var(--champagne); font-family: var(--fonte-titulo); font-size: 2.4rem; color: var(--champagne); }

@@ -24,13 +24,13 @@ import { evento, rodape } from '../data/conteudo.js'
 </template>
 
 <style scoped>
-.rodape { background: var(--noite); color: var(--branco); padding: 4rem 1.5rem 3rem; text-align: center; }
+.rodape { background: #14101f; color: #ffffff; padding: 4rem 1.5rem 3rem; text-align: center; }
 .rodape__conteudo { max-width: var(--largura-max); margin: 0 auto; display: grid; gap: .8rem; justify-items: center; }
 .rodape__logo { width: min(320px, 70vw); height: auto; margin-bottom: 1rem; }
-.rodape__nome { color: var(--champagne-claro); }
+.rodape__nome { color: #e9dcc0; }
 .rodape__data { font-family: var(--fonte-titulo); font-size: 1.5rem; }
 .rodape__frase { max-width: 40ch; color: rgba(255, 255, 255, .7); font-style: italic; }
 .rodape__contatos { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem 2rem; margin-top: 1.2rem; }
-.rodape__contatos a { color: var(--branco); text-underline-offset: 4px; }
+.rodape__contatos a { color: #ffffff; text-underline-offset: 4px; }
 .rodape__vazio { color: rgba(255, 255, 255, .5); }
 </style>

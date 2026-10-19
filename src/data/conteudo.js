@@ -21,6 +21,21 @@ export const evento = {
      Exemplo: 'https://forms.gle/seu-formulario'
      Enquanto estiver vazio (''), o botão mostra "Informações em breve". */
   linkInscricao: 'https://forms.gle/z7r1LAYRkvLRryXY7',
+
+  /* CONTAGEM REGRESSIVA
+     A data do acampamento foi confirmada para 04/12/2026, e o horário oficial ainda não foi
+     definido pela organização. Enquanto isso, usamos um horário provisório em Brasília para a referência.
+     Quando o horário oficial do evento for confirmado, ajuste o valor de "alvo" abaixo para o horário correto.
+     O código usa esse valor em fuso local de Brasília e não aceita contagem em negativo. */
+  contagemRegressiva: {
+    alvo: '2026-12-04T00:00:00-03:00',
+    nota: 'Horário provisório em Brasília. Ajuste este valor quando o horário oficial for confirmado.',
+  },
+
+  /* URL do site para compartilhamento.
+     Deixe vazio para usar a URL atual da página em produção. Isso evita inventar um domínio novo.
+     Se for necessário fixar uma URL, cole a oficial entre as aspas. */
+  siteUrl: '',
 }
 
 /* ---------------------------------------------------------------------
@@ -150,8 +165,34 @@ export const localizacao = {
   mapaIncorporado: '', // Endereço do <iframe> do Google Maps (Compartilhar > Incorporar mapa > copie só o "src")
 }
 
+export const galeriaFotos = [
+  { src: '/images/depoimentos/1.png', alt: 'Foto de Davi', titulo: '', legenda: 'Memórias do CONECTADOS.' },
+  { src: '/images/depoimentos/2.png', alt: 'Foto de Gustavo', titulo: '', legenda: 'Memórias do CONECTADOS.' },
+  { src: '/images/depoimentos/3.png', alt: 'Foto de Isabely', titulo: '', legenda: 'Memórias do CONECTADOS.' },
+  { src: '/images/depoimentos/4.png', alt: 'Foto de Kailany', titulo: '', legenda: 'Memórias do CONECTADOS.' },
+  { src: '/images/depoimentos/7.png', alt: 'Foto de Giovana', titulo: '', legenda: 'Memórias do CONECTADOS.' },
+  { src: '/images/depoimentos/5.png', alt: 'Foto da Ana', titulo: '', legenda: 'Memórias do CONECTADOS.' },
+  { src: '/images/depoimentos/6.png', alt: 'Foto da Fernanda', titulo: '', legenda: 'Memórias do CONECTADOS.' },
+  { src: '/images/depoimentos/8.jpeg', alt: 'Foto da Fernanda', titulo: '', legenda: 'Memórias do CONECTADOS.' },
+]
+
+export const galeriaVideos = [
+  { tipo: 'arquivo', titulo: 'Vídeo do acampamento', src: '/images/videos/video-acampa.mp4' },
+  // Vídeo incorporado: { tipo: 'embed', titulo: 'Retiro', poster: '/images/galeria/miniatura.jpg', src: 'https://www.youtube.com/embed/ID_DO_VIDEO' }
+]
+
 /* ---------------------------------------------------------------------
-   10) PERGUNTAS FREQUENTES
+   11) COMPARTILHAMENTO
+   - Mensagem usada pelo botão de compartilhar e pelo compartilhamento do WhatsApp.
+   - Ajuste o texto e a URL apenas nesse bloco.
+   --------------------------------------------------------------------- */
+export const compartilhamento = {
+  mensagem: 'Venha conhecer o CONECTADOS — Acampamento de Final de Ano — Retiro de Jovens. Dias especiais para fortalecer a fé, viver a comunhão e criar experiências que ficam para a vida.',
+  url: evento.siteUrl,
+}
+
+/* ---------------------------------------------------------------------
+   12) PERGUNTAS FREQUENTES
    Para adicionar: copie um bloco { pergunta, resposta }.
    Respostas vazias ficam como "Informações em breve".
    --------------------------------------------------------------------- */

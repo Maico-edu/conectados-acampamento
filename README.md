@@ -44,9 +44,17 @@ Substitua o arquivo **`public/images/logo-conectados.png`** pela logo oficial (m
 ## 8. Adicionar fotos
 - Equipe: salve em `public/images/equipe/` e, em `conteudo.js`, escreva `foto: '/images/equipe/nome.jpg'`.
 - Depoimentos: salve em `public/images/depoimentos/` e use `foto: '/images/depoimentos/nome.jpg'`.
+- Galeria de fotos: edite `galeriaFotos` em `src/data/conteudo.js`; cada item recebe `src`, `alt` e `titulo`.
 (Sem `public` no caminho; o site já entende.)
 
-## 9. Alterar textos
+## 9. Galeria de vídeos
+A estrutura da galeria fica em `src/data/conteudo.js`, em `galeriaVideos`. Para adicionar um vídeo real, use o objeto:
+```
+{ titulo: 'Nome do vídeo', poster: '/images/depoimentos/imagem.jpg', src: 'https://www.youtube.com/embed/ID_DO_VIDEO' }
+```
+Se a lista estiver vazia, a seção mostra uma mensagem pronta para receber novos registros e não exibe conteúdo fictício.
+
+## 10. Alterar textos
 Abra `src/data/conteudo.js` e mude o que está entre aspas. Textos que só existem em uma seção (ex.: o título "O que levar") estão no arquivo dela em `src/sections/`.
 
 ## 10. Cores e fontes
