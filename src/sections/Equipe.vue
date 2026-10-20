@@ -14,13 +14,12 @@ const inicial = (nome) => (nome ? nome.trim().charAt(0).toUpperCase() : '?')
       </div>
 
       <ul class="equipe__grade">
-        <li v-for="(pessoa, i) in equipe" :key="i" class="equipe__card">
+        <li v-for="pessoa in equipe" :key="pessoa.nome" class="equipe__card">
           <img v-if="pessoa.foto" :src="pessoa.foto" :alt="`Foto de ${pessoa.nome}`" class="equipe__foto" loading="lazy" />
           <div v-else class="equipe__foto equipe__foto--vazia" aria-hidden="true">{{ inicial(pessoa.nome) }}</div>
           <h3>{{ pessoa.nome }}</h3>
           <p class="equipe__funcao">{{ pessoa.funcao }}</p>
           <p class="equipe__descricao">{{ pessoa.descricao }}</p>
-          <span v-if="pessoa.exemplo" class="etiqueta-exemplo">Lideres</span>
         </li>
       </ul>
     </div>
