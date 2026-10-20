@@ -1,16 +1,13 @@
 <script setup>
-/* SEÇÃO EXPERIÊNCIAS E DEPOIMENTOS — carrossel responsivo.
-   Os depoimentos vêm da lista "depoimentos" em conteudo.js.
-   Como funciona: os cards ficam numa faixa que rola na horizontal (com "encaixe").
-   Os botões ‹ › apenas rolam a faixa. No celular, a pessoa também pode deslizar o dedo. */
+
 import { ref } from 'vue'
 import { depoimentos } from '../data/conteudo.js'
 
-const faixa = ref(null) // referência ao elemento da faixa
+const faixa = ref(null) 
 
 function rolar(direcao) {
   if (!faixa.value) return
-  // rola a largura de um card (aprox.) para a esquerda (-1) ou direita (1)
+  
   const largura = faixa.value.firstElementChild?.getBoundingClientRect().width || 300
   faixa.value.scrollBy({ left: direcao * (largura + 20), behavior: 'smooth' })
 }

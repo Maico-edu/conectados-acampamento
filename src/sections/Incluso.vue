@@ -1,5 +1,4 @@
 <script setup>
-/* SEÇÃO O QUE ESTÁ INCLUSO — os itens vêm da lista "incluso" em conteudo.js. */
 import { incluso, evento } from '../data/conteudo.js'
 </script>
 

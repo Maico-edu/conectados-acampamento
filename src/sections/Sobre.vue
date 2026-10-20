@@ -1,5 +1,5 @@
 <script setup>
-/* SEÇÃO SOBRE — propósito do CONECTADOS. Textos em conteudo.js (objeto "sobre"). */
+
 import { sobre } from '../data/conteudo.js'
 </script>
 

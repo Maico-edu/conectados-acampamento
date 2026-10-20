@@ -1,7 +1,4 @@
 <script setup>
-/* RODAPÉ — logo, nome, data, redes sociais e contato.
-   Os dados vêm de src/data/conteudo.js (objetos "evento" e "rodape").
-   Instagram e contato só aparecem quando você preenche no conteudo.js. */
 import { evento, rodape } from '../data/conteudo.js'
 </script>
 

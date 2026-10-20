@@ -1,10 +1,9 @@
 <script setup>
-/* SEÇÃO PERGUNTAS FREQUENTES — acordeão (clica na pergunta e a resposta abre).
-   As perguntas vêm de "perguntas" em conteudo.js. Resposta vazia ('') mostra "Informações em breve". */
+
 import { ref } from 'vue'
 import { perguntas } from '../data/conteudo.js'
 
-const abertaIndice = ref(null) // qual pergunta está aberta (null = nenhuma)
+const abertaIndice = ref(null) 
 function alternar(i) { abertaIndice.value = abertaIndice.value === i ? null : i }
 </script>
 

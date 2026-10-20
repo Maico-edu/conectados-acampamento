@@ -1,6 +1,4 @@
 <script setup>
-/* SEÇÃO PROGRAMAÇÃO — os dias e atividades vêm de "programacao" em conteudo.js.
-   Itens com "exemplo: true" aparecem com a etiqueta "Exemplo — a preencher". */
 import { programacao, avisoProgramacao } from '../data/conteudo.js'
 </script>
 

@@ -1,10 +1,5 @@
 <script setup>
-/* BOTÃO REUTILIZÁVEL
-   Usado no início, na inscrição etc.
-   - href: destino do botão. Pode ser link externo ("https://...") ou seção ("#sobre").
-   - variante: 'destaque' (preenchido) | 'secundario' (só contorno) | 'claro' (para fundos escuros)
-   - Se href estiver VAZIO, ao clicar mostra a mensagem "Informações em breve"
-     (em vez de levar a uma página que não existe). */
+
 import { ref } from 'vue'
 
 const props = defineProps({
@@ -15,7 +10,7 @@ const props = defineProps({
 const mostrarAviso = ref(false)
 function avisarEmBreve() {
   mostrarAviso.value = true
-  setTimeout(() => (mostrarAviso.value = false), 3500) // some depois de 3,5 segundos
+  setTimeout(() => (mostrarAviso.value = false), 3500) 
 }
 const ehExterno = () => /^https?:\/\//.test(props.href)
 </script>

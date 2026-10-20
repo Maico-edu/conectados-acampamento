@@ -77,9 +77,7 @@ onBeforeUnmount(() => {
       <p class="inicio__convite">Chame um amigo para viver essa experiência com você e compartilhe o acampamento!</p>
 
       <div class="inicio__botoes">
-        <!-- Botão de inscrição: usa o link definido em conteudo.js -->
         <BotaoPrincipal :href="evento.linkInscricao">Quero me inscrever</BotaoPrincipal>
-        <!-- Botão secundário: rola até a seção "Sobre" (troque "#sobre" para mudar o destino) -->
         <BotaoPrincipal href="#sobre" variante="secundario">Conhecer o acampamento</BotaoPrincipal>
         <button type="button" class="inicio__compartilhar" @click="compartilharSite">Compartilhar</button>
       </div>
@@ -127,7 +125,6 @@ onBeforeUnmount(() => {
 }
 .inicio__compartilhar:hover, .inicio__compartilhar:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(20,16,31,.1); background: var(--champagne-claro); }
 
-/* Esfera decorativa (referência da logo) */
 .inicio__esfera {
   position: absolute; right: -14vmin; top: 50%; width: min(82vmin, 760px); aspect-ratio: 1; border-radius: 50%;
   transform: translateY(-50%); background: var(--degrade-esfera); opacity: .9;
@@ -140,7 +137,6 @@ onBeforeUnmount(() => {
 }
 @keyframes flutuar { 50% { transform: translateY(-52%); } }
 
-/* No celular, a esfera vira um fundo suave atrás do texto (para o texto continuar legível) */
 @media (max-width: 800px) {
   .inicio__esfera { right: -40vmin; top: 18%; opacity: .28; }
   .inicio__contador-grid { grid-template-columns: repeat(2, minmax(72px, 1fr)); }

@@ -1,14 +1,9 @@
 <script setup>
-/* MENU HAMBÚRGUER
-   - Botão fixo no canto superior direito que abre/fecha o painel de links.
-   - Os links vêm de "itensMenu" em src/data/conteudo.js (edite lá para adicionar/remover opções).
-   - Ao clicar em um link, o menu fecha e a página rola suavemente até a seção
-     (a rolagem suave está em style.css: "scroll-behavior: smooth").
-   - Tecla ESC também fecha o menu. */
+
 import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
 import { itensMenu, evento } from '../data/conteudo.js'
 
-const aberto = ref(false) // true = menu aberto
+const aberto = ref(false) 
 
 function alternar() { aberto.value = !aberto.value }
 function fechar() { aberto.value = false }
@@ -17,7 +12,6 @@ function aoApertarTecla(e) { if (e.key === 'Escape') fechar() }
 onMounted(() => window.addEventListener('keydown', aoApertarTecla))
 onBeforeUnmount(() => window.removeEventListener('keydown', aoApertarTecla))
 
-// Trava a rolagem da página enquanto o menu está aberto
 watch(aberto, (v) => document.body.classList.toggle('sem-rolagem-menu', v))
 </script>
 

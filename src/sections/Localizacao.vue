@@ -1,6 +1,5 @@
 <script setup>
-/* SEÇÃO LOCALIZAÇÃO — dados em "localizacao" (conteudo.js).
-   Preencha endereco, linkMapa e/ou mapaIncorporado quando o local for divulgado. */
+
 import { localizacao } from '../data/conteudo.js'
 import BotaoPrincipal from '../components/BotaoPrincipal.vue'
 </script>

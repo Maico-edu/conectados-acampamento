@@ -1,9 +1,5 @@
 <script setup>
-/* SEÇÃO NOSSA EQUIPE — as pessoas vêm da lista "equipe" em conteudo.js.
-   Sem foto? Aparece um círculo com a inicial. Com foto: coloque o caminho em "foto". */
-import { equipe } from '../data/conteudo.js'
 
-// Pega a primeira letra do nome (para o círculo quando não há foto)
 const inicial = (nome) => (nome ? nome.trim().charAt(0).toUpperCase() : '?')
 </script>
 

@@ -1,26 +1,19 @@
 <script setup>
-/* TELA DE ABERTURA (primeira tela do site)
-   Fundo escuro + esfera colorida com anel (inspirados na imagem de referência)
-   + logo oficial revelada da ESQUERDA para a DIREITA.
-   Depois da revelação, a pessoa toca/clica em qualquer lugar para entrar.
 
-   ===== ONDE AJUSTAR A ANIMAÇÃO (números em milissegundos: 1000 = 1 segundo) ===== */
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-const ATRASO_INICIAL_MS = 400      // espera antes de começar a revelar a logo
-const DURACAO_REVELACAO_MS = 1000  // quanto tempo a logo leva para aparecer (esquerda → direita)
-const DURACAO_SAIDA_MS = 1100      // duração da transição para o site principal
+const ATRASO_INICIAL_MS = 400     
+const DURACAO_REVELACAO_MS = 1000  
+const DURACAO_SAIDA_MS = 1100      
 
-/* TROCAR A LOGO: substitua o arquivo public/images/logo-conectados.png
-   (mantenha o mesmo nome) ou mude o caminho abaixo. */
 const CAMINHO_LOGO = '/images/logo-conectados.png'
 
-// "terminou": avisa o App.vue que a tela pode ser removida
+
 const emit = defineEmits(['terminou'])
 
-const revelada = ref(false)   // true = logo começou a aparecer
-const podeEntrar = ref(false) // true = revelação acabou; clique liberado
-const saindo = ref(false)     // true = transição de saída em andamento
+const revelada = ref(false)   
+const podeEntrar = ref(false) 
+const saindo = ref(false)    
 
 const temporizadores = []
 
@@ -30,10 +23,9 @@ onMounted(() => {
 })
 onBeforeUnmount(() => temporizadores.forEach(clearTimeout))
 
-// Chamada ao clicar, tocar ou apertar Enter/Espaço
 function entrar() {
   if (!podeEntrar.value || saindo.value) return
-  saindo.value = true // ativa o efeito de saída (definido no CSS abaixo)
+  saindo.value = true 
   setTimeout(() => emit('terminou'), DURACAO_SAIDA_MS)
 }
 </script>
@@ -78,7 +70,6 @@ function entrar() {
 .abertura:not(:disabled) { cursor: pointer; }
 .abertura > * { grid-area: 1 / 1; }
 
-/* Tamanho da esfera: cabe em qualquer tela (celular, tablet, computador) */
 .abertura { --tam: min(80vw, 62vh, 540px); }
 
 .abertura__esfera {
@@ -106,7 +97,6 @@ function entrar() {
 .abertura--revelada .abertura__brilho { opacity: 1; }
 .abertura--revelada .abertura__orbita { opacity: .8; transform: rotate(-14deg); }
 
-/* LOGO: começa escondida (cortada à direita) e é "aberta" da esquerda para a direita */
 .abertura__logo {
   width: min(calc(var(--tam) * 1.05), 86vw); height: auto; position: relative;
   filter: drop-shadow(0 2px 14px rgba(0, 0, 0, .35));
@@ -124,7 +114,6 @@ function entrar() {
 .abertura__dica--visivel { opacity: 1; animation: pulsar 2.4s ease-in-out infinite; }
 @keyframes pulsar { 50% { opacity: .45; } }
 
-/* TRANSIÇÃO DE SAÍDA: a tela cresce e some, revelando o site por trás */
 .abertura--saindo { opacity: 0; transform: scale(1.12); pointer-events: none; }
 .abertura--saindo .abertura__esfera { transform: scale(1.5); transition: transform var(--saida) ease; }
 

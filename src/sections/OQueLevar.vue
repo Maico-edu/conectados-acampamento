@@ -1,7 +1,5 @@
 <script setup>
-/* SEÇÃO O QUE LEVAR — checklist interativo.
-   A lista vem de "oQueLevar" em conteudo.js. Os itens marcados ficam salvos no
-   navegador da pessoa (localStorage), então continuam marcados se ela voltar depois. */
+
 import { ref, computed, watch } from 'vue'
 import { oQueLevar, avisoOQueLevar } from '../data/conteudo.js'
 

@@ -1,6 +1,4 @@
 <script setup>
-/* SEÇÃO INSCRIÇÃO — chamada final. Valor e link vêm de "evento" em conteudo.js.
-   Sem link? O botão mostra "Informações em breve" ao ser clicado. */
 import BotaoPrincipal from '../components/BotaoPrincipal.vue'
 import { evento } from '../data/conteudo.js'
 </script>
