@@ -85,10 +85,10 @@ export const avisoProgramacao = 'A programação será divulgada em breve. Os it
 
 
 export const equipe = [
-  { nome: 'Ricardo', funcao: 'Lider de Jovens', descricao: 'Sou Ricardo, cristão, casado com Fernanda e líder de jovens na Igreja Recomeça, em Joinville. Sirvo com dedicação, buscando apoiar e incentivar os jovens em sua caminhada com Deus.', foto: '../images/equipe/ricardo.jpeg', exemplo: true },
-  { nome: 'Fernanda', funcao: 'Lider de Jovens', descricao: 'Sou Fernanda, cristã, casada com Ricardo e serva na Igreja Recomeça, em Joinville. Tenho carinho especial pelos jovens e alegria em caminhar com eles na fé, compartilhando amor, cuidado e a Palavra de Deus.', foto: '../images/equipe/fernanda.jpeg', exemplo: true },
-  { nome: 'Jefferson Moralles', funcao: 'Lider de Jovens', descricao: 'Sou Jefferson Moralles, cristão, casado com Ana Karolina e servo na Igreja Recomeça, em Joinville. Tenho alegria em caminhar com os jovens, compartilhando a fé, a Palavra de Deus e momentos que fortalecem nossa caminhada.', foto: '../images/equipe/jef.jpeg', exemplo: true },
-  { nome: 'Ana Karolina', funcao: 'Lider de Jovens', descricao: 'Sou Ana Karolina, cristã, casada com Jefferson Moralles e serva na Igreja Recomeça, em Joinville. Amo estar perto dos jovens, acolher, ouvir e caminhar com eles, compartilhando a fé e o amor de Deus. ', foto: '../images/equipe/ana.jpeg', exemplo: true },
+  { nome: 'Ricardo', funcao: 'Lider de Jovens', descricao: 'Sou Ricardo, cristão, casado com Fernanda e líder de jovens na Igreja Recomeça, em Joinville. Sirvo com dedicação, buscando apoiar e incentivar os jovens em sua caminhada com Deus.', foto: '/images/equipe/ricardo.jpeg', exemplo: true },
+  { nome: 'Fernanda', funcao: 'Lider de Jovens', descricao: 'Sou Fernanda, cristã, casada com Ricardo e serva na Igreja Recomeça, em Joinville. Tenho carinho especial pelos jovens e alegria em caminhar com eles na fé, compartilhando amor, cuidado e a Palavra de Deus.', foto: '/images/equipe/fernanda.jpeg', exemplo: true },
+  { nome: 'Jefferson Moralles', funcao: 'Lider de Jovens', descricao: 'Sou Jefferson Moralles, cristão, casado com Ana Karolina e servo na Igreja Recomeça, em Joinville. Tenho alegria em caminhar com os jovens, compartilhando a fé, a Palavra de Deus e momentos que fortalecem nossa caminhada.', foto: '/images/equipe/jef.jpeg', exemplo: true },
+  { nome: 'Ana Karolina', funcao: 'Lider de Jovens', descricao: 'Sou Ana Karolina, cristã, casada com Jefferson Moralles e serva na Igreja Recomeça, em Joinville. Amo estar perto dos jovens, acolher, ouvir e caminhar com eles, compartilhando a fé e o amor de Deus. ', foto: '/images/equipe/ana.jpeg', exemplo: true },
 ]
 
 

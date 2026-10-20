@@ -1,4 +1,5 @@
 <script setup>
+import { equipe } from '../data/conteudo.js'
 
 const inicial = (nome) => (nome ? nome.trim().charAt(0).toUpperCase() : '?')
 </script>
